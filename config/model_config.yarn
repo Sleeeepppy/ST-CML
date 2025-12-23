@@ -1,0 +1,30 @@
+task:
+  his_num: 12
+  pred_num: 6
+  batch_size: 16
+  task_num: 2
+  test_batch_size: 128
+contrastive:
+  contrastive_batch_size: 128
+  fn_t: 12
+  em_t: 0.0
+  im_t: 0.1
+  ts_t: 0.0
+  ism_t: 0.0
+  ism_e: 9
+  tempe: 0.1
+model:
+  node_feature_dim: 2
+  edge_feature_dim: 4
+  message_dim: 2
+  hidden_dim: 16
+  output_dim: 1
+  meta_dim: 16
+  update_lr: 0.01
+  meta_lr: 0.01
+  loss_lambda: 0.5
+  update_step: 5
+  update_step_test: 10
+  gen_graph_dimension: 64
+  tp: True
+  sp: True
